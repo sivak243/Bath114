@@ -2,21 +2,21 @@ pipeline {
     agent any
 
     stages {
-        stage('Buid') {
+        stage('SourceCodeBuid') {
             steps {
                 echo 'I am in Build Stage'
                 sleep 25
             }
         }
             
-         stage('Test') {
+         stage('Testing the Code ') {
             steps {
                 echo 'I am in Test Stage'
                 sleep 25
             }
          }
             
-        stage('Deploy') {
+        stage('Deploy the code') {
             steps {
                 echo 'I am in Deploy Stage'
                 sleep 25
